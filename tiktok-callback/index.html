@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>TikTok callback</title>
+<style>body{font-family:system-ui;max-width:680px;margin:40px auto;padding:0 16px}code{background:#f2f2f2;padding:2px 6px;border-radius:4px;word-break:break-all}</style>
+</head><body>
+<h2>Autorizacao recebida</h2>
+<p>Copie a URL inteira da barra de endereco e cole pro Claude. Ou copie so o <b>code</b> abaixo:</p>
+<p><b>code:</b> <code id="c">-</code></p>
+<p><b>state:</b> <code id="s">-</code></p>
+<script>
+var p=new URLSearchParams(location.search);
+document.getElementById('c').textContent=p.get('code')||'(nenhum)';
+document.getElementById('s').textContent=p.get('state')||'(nenhum)';
+</script>
+</body></html>
